@@ -1,0 +1,16 @@
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "private": true,
+    "workspaces": [],
+    "scripts": {
+        "clean": "rm -rf ./node_modules",
+        "lint": "yarn run lint",
+        "typecheck": "yarn run typecheck"
+    },
+    "engines": {
+        "node": ">=14.10",
+        "yarn": ">=1.21.1"
+    }
+}

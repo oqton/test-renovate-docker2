@@ -1,0 +1,50 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "hostRules": [
+        {
+            "baseUrl": "https://quay.io",
+            "hostType": "docker"
+        }
+    ],
+    "packageRules": [
+        {
+            "datasources": [
+                "docker"
+            ],
+            "managers": [
+                "dockerfile"
+            ],
+            "packagePatterns": [
+                "^quay.io/"
+            ],
+            "versioning": "semver",
+            "ignoreUnstable": false,
+            "schedule": [
+                "after 2pm"
+            ],
+            "groupName": "Docker containers",
+            "enabled": true
+        }
+    ],
+    "includePaths": [
+        "tooling/tool-version-sync/*"
+    ],
+    "git-submodules": {
+        "enabled": false
+    },
+    "npm": {
+        "enabled": false
+    },
+    "nvm": {
+        "enabled": false
+    },
+    "circleci": {
+        "enabled": false
+    },
+    "docker-compose": {
+        "enabled": false
+    },
+    "rebaseWhen": "conflicted"
+}
