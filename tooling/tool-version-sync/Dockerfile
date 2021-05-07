@@ -4,4 +4,4 @@ FROM quay.io/calico/typha:v3.17.2-ppc64le as image3
 FROM quay.io/thanos/thanos:v0.16.0-rc.0 as image4
 FROM quay.io/calico/dikastes:v3.16.6 as image5
 FROM quay.io/calico/gobgpd:v0.1.2 as image6
-FROM quay.io/calico/felix:2.6.6-6-g7a4af8b7 as image7
+FROM quay.io/calico/felix:v3.2.1 as image7
